@@ -22,6 +22,9 @@ const App = () => {
         <Route path='/preview/:id' element={<PreviewPage />}/>
       </Route>
 
+{/* Catch-all */}
+{/* <Route path='*' element={<Navigate to ="/" replace />}/> */}
+
     </Routes>
   )
 }
