@@ -6,4 +6,4 @@ const PublishPage = () => {
   )
 }
 
-export default PublishPage
+export default PublishPage 
