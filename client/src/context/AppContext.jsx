@@ -213,7 +213,7 @@ export function AppContextProvider({children}){
 
     useEffect(()=>{
         return ()=>{
-            debouncedSave.cancel();
+            debouncedSave.flush();
         }
     },[debouncedSave])
 
@@ -245,7 +245,8 @@ export function AppContextProvider({children}){
             handleGenerate,
             handleDelete,
             logout,
-            updateProjectFiles
+            updateProjectFiles,
+            handleChat
         }}>
             {children}
         </AppContext.Provider>
