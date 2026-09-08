@@ -48,17 +48,6 @@ export async function register (req, res) {
 }
 
 export async function login (req, res) {
-    const token = jwt.sign(payload, JWT_SECRET, {expiresIn: "30d"})
-    res.cookie('token', token, {
-        httpsOnly: true,
-        secure: process.env.NODE_ENV === "production",
-        sameSite: "lax",
-        maxAge: 30 * 24 * 60 * 1000, // 30 days
-        path: "/",
-    })
-}
-
-export async function register (req, res) {
     const {email, password} = req.body
 
     if(!email || !password){
