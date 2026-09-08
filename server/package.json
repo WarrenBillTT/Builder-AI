@@ -12,13 +12,17 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
+    "@ai-sdk/openai": "^4.0.60",
+    "ai": "^7.0.93",
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
     "dotenv": "^17.4.2",
     "express": "^5.2.1",
     "jsonwebtoken": "^9.0.3",
-    "mongoose": "^9.9.5"
+    "mongoose": "^9.9.5",
+    "p-map": "^7.0.7",
+    "zod": "^4.5.4"
   },
   "devDependencies": {
     "nodemon": "^3.1.14"
