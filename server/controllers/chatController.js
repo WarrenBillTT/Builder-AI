@@ -1,4 +1,4 @@
-import { Project } from "../models/Project";
+import { Project } from "../models/Project.js";
 import { reviseProject } from "../services/ai.js";
 import { applyOperations } from "../services/diff.js";
 
