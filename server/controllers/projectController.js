@@ -95,7 +95,7 @@ async function runBackgroundGeneration(projectId, prompt){
                 if(project){
                     project.files = project.files || {};
                     project.files[path] = { content: code, hash: hashContent(code) };
-                    project.filesGenerated = [...Project(project.filesGenerated || []), path];
+                    project.filesGenerated = [...(project.filesGenerated || []), path];
                     project.messages.push({
                         role: "assistant",
                         content: `Created file "${path}"`,
